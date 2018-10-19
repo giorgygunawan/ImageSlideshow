@@ -274,7 +274,7 @@ open class ImageSlideshow: UIView {
             if !view.zoomInInitially {
                 view.zoomOut()
             }
-            view.frame = CGRect(x: scrollView.frame.size.width * CGFloat(index), y: 0, width: scrollView.frame.size.width, height: scrollView.frame.size.height)
+            view.frame = CGRect(x: (scrollView.frame.size.width + 64) * CGFloat(index), y: 0, width: scrollView.frame.size.width, height: scrollView.frame.size.height)
         }
 
         setScrollViewPage(scrollViewPage, animated: false)
